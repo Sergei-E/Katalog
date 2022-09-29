@@ -1,0 +1,484 @@
+    body {
+        width: 70%;
+        height: auto;
+        border: 1px solid#000;
+        margin: auto;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    
+    header {
+        width: 100%;
+        height: auto;
+        background: #CFD0D4;
+        border-radius: 10px 10px 0 0;
+        padding-bottom: 15px;
+    }
+    
+    #FullPole {
+        width: 100%;
+        height: 90%;
+        border: 0px solid #000;
+        margin: auto;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+    }
+    
+    #LeftPole {
+        width: 33.3%;
+        height: 99%;
+        border: 0px solid #000;
+        padding-top: 40px;
+    }
+    
+    .Contact {
+        border: 0px solid #000;
+        width: 100%;
+        height: 50%;
+    }
+    
+    #IconHomeTelefon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #HomeTelefon {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    #IconSotovTelefon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #SotovTelefon {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    #FonLogo {
+        border: 0px solid #000;
+        width: 33.3%;
+        height: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #Logo {
+        width: 280px;
+        height: 180px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #RightPole {
+        width: 33.3%;
+        height: 100%;
+        border: 0px solid#000;
+        position: relative;
+    }
+    
+    #Adress {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #000000;
+        padding-top: 10%;
+    }
+    
+    main {
+        box-sizing: border-box;
+        width: 660px;
+        height: 60px;
+        left: 390px;
+        top: 260px;
+        background: #F5E6E1;
+        border: 1px solid #753840;
+        box-shadow: 5px 4px 4px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: auto;
+    }
+    
+    main a {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #040404;
+        text-decoration: none;
+        padding-left: 9%;
+    }
+    
+    article {
+        width: 70%;
+        height: auto;
+        border: 0px solid red;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    hr {
+        width: 100%;
+        border: 3px solid #753840;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    h1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 30px;
+        /* identical to box height, or 94% */
+        text-align: center;
+        text-indent: 5px;
+        color: #000000;
+    }
+    
+    button {
+        margin-top: 20px;
+        box-sizing: border-box;
+        width: 160px;
+        height: 40px;
+        background: #F5E6E1;
+        border: 3px solid #753840;
+        border-radius: 10px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    #ModOkon {
+        color: #000000;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        margin: auto;
+        text-decoration: none;
+    }
+    
+    .modal {
+        position: fixed;
+        /* фиксированное положение */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        /* цвет фона */
+        z-index: 1050;
+        opacity: 0;
+        /* по умолчанию модальное окно прозрачно */
+        -webkit-transition: opacity 200ms ease-in;
+        -moz-transition: opacity 200ms ease-in;
+        transition: opacity 200ms ease-in;
+        /* анимация перехода */
+        pointer-events: none;
+        /* элемент невидим для событий мыши */
+        margin: 0;
+        padding: 0;
+    }
+    /* при отображении модального окно */
+    
+    .modal:target {
+        opacity: 1;
+        /* делаем окно видимым */
+        pointer-events: auto;
+        /* элемент видим для событий мыши */
+        overflow-y: auto;
+        /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+    }
+    
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: 10px;
+    }
+    
+    @media (min-width: 576px) {
+        .modal-dialog {
+            max-width: 70%;
+            margin: 30px auto;
+        }
+    }
+    
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-color: #F5E6E1;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 3px solid #753840;
+        border-radius: 10px;
+        outline: 0;
+    }
+    
+    @media (min-width: 768px) {
+        .modal-content {
+            -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        }
+    }
+    
+    .modal-header {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 15px;
+        border-bottom: 0px solid#000;
+    }
+    
+    .modal-title {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.5;
+        font-size: 30px;
+        font-weight: 500;
+        margin-left: 3.5%;
+    }
+    
+    .close {
+        float: right;
+        font-family: sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: .5;
+        text-decoration: none;
+    }
+    
+    .close:focus,
+    .close:hover {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: .75;
+    }
+    
+    .modal-body {
+        position: relative;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 15px;
+        overflow: auto;
+    }
+    
+    .modal-body form table {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        border-spacing: 10px 15px;
+        border: 0px solid#000;
+    }
+    
+    .modal-body form {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        border: 0px solid#000;
+    }
+    
+    .ModalTable {
+        height: 30px;
+        font-size: 20px;
+        border: 0px solid#000;
+        font-family: 'Inter';
+        padding-left: 3%;
+    }
+    
+    .Output {
+        width: 80%;
+        height: 30px;
+        border: 0px solid #000;
+        border-radius: 10px;
+        font-size: 18px;
+        font-family: 'Inter';
+        padding-left: 10px;
+        margin-left: 10%;
+    }
+    
+    .OutputOtzov {
+        width: 93%;
+        height: 150px;
+        border: 0px solid #000;
+        margin-left: 3.5%;
+        border-radius: 10px;
+        font-family: 'Inter';
+        font-size: 20px;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    
+    #Otprav {
+        border: 0px solid #000;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        background-color: #97A98F;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        font-weight: 700;
+    }
+    
+    #OtzovFull {
+        width: 90%;
+        height: auto;
+        border: 0px solid #000;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .DemoOtzov:nth-child(odd) {
+        width: auto;
+        height: 100px;
+        border: 1px solid #753840;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        background-color: #E7CAA8;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    
+    .DemoOtzov:nth-child(even) {
+        width: auto;
+        height: 100px;
+        border: 1px solid #753840;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        background-color: #CFD0D4;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    
+    .DemoOtzov p {
+        font-size: 16px;
+    }
+    
+    #Otvet {
+        border: 0px solid#000;
+        width: auto;
+        height: auto;
+    }
+    
+    #Otvet p {
+        border: 0px solid#000;
+        width: 300px;
+        height: auto;
+        font-size: 30px;
+        margin: auto;
+        margin-top: 20px;
+        color: #753840;
+        font-weight: 700;
+        font-family: 'Inter';
+    }
+    
+    footer {
+        height: auto;
+        width: 100%;
+        background: #F5E6E1;
+        border: 0px solid #000;
+        border-radius: 0 0 10px 10px;
+    }
+    
+    #FullFooter {
+        display: flex;
+        border: 0px solid #000;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .PoleFooter {
+        border: 0px solid#000;
+        width: 30.3%;
+        background: #D9D9D9;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .IconSeti {
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .PoleFooter a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    #PoleLeft {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    #PoleCenter {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #PoleRight {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: #000000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }

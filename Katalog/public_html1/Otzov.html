@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Отзывы</title>
+    <link type="text/css" href="style2.css" rel="stylesheet" />
+    <link type="text/css" href="styleOtzov3.css" rel="stylesheet" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="FullPole">
+            <div id="LeftPole">
+                <div class="Contact">
+                    <p id="HomeTelefon"><img id="IconHomeTelefon" src="free-icon-telephone-159832.png" align="center"> +7(912)115-23-44</p>
+                </div>
+                <div class="Contact">
+                    <p id="SotovTelefon"><img id="IconSotovTelefon" src="free-icon-mobile-phone-545245.png" align="center">+7(912)345-33-65</p>
+                </div>
+            </div>
+            <div id="FonLogo">
+                <img id="Logo" src="Logo.png ">
+            </div>
+            <div id="RightPole">
+                <p id="Adress">Иркутск ул. Паленова д. 19</p>
+            </div>
+        </div>
+
+        <main>
+            <p>
+                <a href="index.html">Главная</a>
+                <a href="Catalog.html">Каталог товаров</a>
+                <a href="KontactInform.html">Контактная информация</a></p>
+        </main>
+    </header>
+    <article>
+        <h1>Отзывы покупателей</h1>
+        <hr>
+        <button><a href="#openModal" id="ModOkon">Оставить отзыв</a></button>
+        <div id="openModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Отзыв пакупателя</h3>
+                        <a href="#close" title="Close" class="close">×</a>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" id="FormOtzov">
+                            <table>
+                                <tr>
+                                    <td class="ModalTable">ФИО</td>
+                                    <td class="ModalTable">Телефон</td>
+                                    <td class="ModalTable">E-mail</td>
+                                </tr>
+                                <tr>
+                                    <td><input class="Output" type="text" id="FIO" name="FIO"></td>
+                                    <td><input class="Output" type="text" id="Telefon" name="Telefon"></td>
+                                    <td><input class="Output" type="text" id="EMail" name="EMail"></td>
+                                </tr>
+                                <tr>
+                                    <td class="ModalTable">Отзыв</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" id="sdf">
+                                        <textarea class="OutputOtzov" type="text" id="OtzovPol" name="OtzovPol"></textarea>
+                                    </td>
+                                </tr>
+
+                            </table>
+                            <div style="width: 120px; height: auto; margin: auto; border: 0px solid #000;"> <input id="Otprav" type="submit"></div>
+
+                        </form>
+                        <div id="Otvet"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="OtzovFull"></div>
+    </article>
+
+    <footer>
+        <div id="FullFooter">
+            <div class="PoleFooter">
+                <p id="PoleLeft"><a href="Catalog.html">Каталог товаров</a></p>
+            </div>
+            <div class="PoleFooter">
+                <p id="PoleCenter">СОЦИАЛЬНЫЕ СЕТИ</p>
+                <a href="https://ok.ru/"><img class="IconSeti " src="free-icon-odnoklassniki-3291683.png" alt="instagram"></a>
+                <a href="https://vk.com/"><img class="IconSeti " src="free-icon-vk-reproductor-2150.png" alt="vk"></a>
+                <a href="https://www.viber.com/ru/"><img class="IconSeti " src="free-icon-viber-3938056.png" alt="viber"></a>
+            </div>
+            <div class="PoleFooter">
+                <p id="PoleRight">Иркутск ул. Паленова д.19</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script4.js"></script>
+
+</body>
+
+</html>
